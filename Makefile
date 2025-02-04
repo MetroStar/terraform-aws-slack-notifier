@@ -3,7 +3,7 @@ ONLY_MOTO := true
 
 export FIND_EXCLUDES := ':!:vendor/*' ':!:*/.terraform/*' ':!:*/.terragrunt-cache/*'
 
-include $(shell test -f .tardigrade-ci || curl -sSL -o .tardigrade-ci "https://raw.githubusercontent.com/plus3it/tardigrade-ci/master/bootstrap/Makefile.bootstrap"; echo .tardigrade-ci)
+include $(shell test -f .tardigrade-ci || curl -sSL -o .tardigrade-ci "https://raw.githubusercontent.com/MetroStar/tardigrade-ci/master/bootstrap/Makefile.bootstrap"; echo .tardigrade-ci)
 
 clean/node:
 	rm -rf ./node_modules ./vendor
